@@ -11,12 +11,6 @@ Dual-LED Feedback: Visual indicators for "Critical" (Red) and "Optimal" (Green) 
 Real-time Monitoring: Integrated 7-segment and Hexadecimal displays for data bus observation
 Hardware Configuration:
 The circuit is designed in the Deeds (Digital Electronics Education and Design Suite) environment using DMC8 (Basic/Enhanced System) components.
-COMPONENT--------------- PORT----------FUNCTION
-Transmitter(TX)OB--------01h---------Data Bus Output
-Transmitter(TX)OA--------00h---------Control (Strobe) Output    
-Reciever(RX)IB------------01h---------Data Bus Input
-Reciever(RX)OB------------01h---------Control (Busy) Output
-Receiver(RX)OC------------02h---------LED/Pump Control
 Software Implementation:
 SMART GREENHOUSE CONTROL SYSTEM TX.mc8: Handles data generation (incrementing humidity) and the strobe signal timing (approx. 0.5 ms).
 SMART GREENHOUSE CONTROL SYSTEM RX.mc8: Handles polling of the strobe line, data acquisition, and threshold-based decision making
