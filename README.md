@@ -25,8 +25,8 @@ The circuit is designed in the **Deeds** environment using **DMC8 Basic System**
 ## 💻 Software Implementation
 The project consists of two core Assembly files:
 
-1.  **`SMART GREENHOUSE TX.mc8`**: Handles data generation and strobe signal timing (approx. 0.5 ms).
-2.  **`SMART GREENHOUSE RX.mc8`**: Handles strobe polling, data acquisition, and threshold-based decision making.
+1.  **`Smart GREENHOUSE CONTROL SYSTEM TX.mc8`**: Handles data generation and strobe signal timing (approx. 0.5 ms).
+2.  **`Smart GREENHOUSE CONTROL SYSTEM RX.mc8`**: Handles strobe polling, data acquisition, and threshold-based decision making.
 
 ### 🧠 Irrigation Logic
 ```assembly
