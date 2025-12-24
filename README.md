@@ -14,8 +14,4 @@ The circuit is designed in the Deeds (Digital Electronics Education and Design S
 Software Implementation:
 SMART GREENHOUSE CONTROL SYSTEM TX.mc8: Handles data generation (incrementing humidity) and the strobe signal timing (approx. 0.5 ms).
 SMART GREENHOUSE CONTROL SYSTEM RX.mc8: Handles polling of the strobe line, data acquisition, and threshold-based decision making
-Irrigation Logic:
-; Threshold: 30h (Decimal 48)
-LD      A, D        ; Load humidity from register D
-CP      30h         ; Compare with threshold
-JP      C, PUMP_ON  ; If Humidity < 30h, start pump (Red LED)
+
